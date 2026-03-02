@@ -203,6 +203,7 @@ with st.sidebar:
             <p style="color: #f39c12; font-weight: bold; margin-bottom: 5px; font-size: 0.9rem;">👨‍💻 Auteur</p>
             <p style="color: #f0f0f0; margin: 0; font-size: 0.85rem;">Athony DJOUMBISSI</p>
             <p style="color: #a0aec0; margin: 5px 0 0 0; font-size: 0.75rem;">📩 <a href="mailto:adjoumbissi@gmail.com" style="color: #a0aec0; text-decoration: none;">adjoumbissi@gmail.com</a></p>
+            <p style="color: #a0aec0; margin: 2px 0 0 0; font-size: 0.75rem;">📞 (237) 691650720</p>
         </div>
         """,
         unsafe_allow_html=True,
