@@ -187,10 +187,33 @@ with st.sidebar:
 
     st.markdown("<br>", unsafe_allow_html=True)
 
+    # --- Section Auteur ---
+    st.markdown("---")
+    try:
+        from data.projects import _img
+        author_img_path = _img("assets/logo_secondaire.png")
+        if os.path.exists(author_img_path):
+            st.image(author_img_path, width=100)
+    except:
+        pass
+
+    st.markdown(
+        """
+        <div style="background: rgba(255, 255, 255, 0.05); padding: 10px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
+            <p style="color: #f39c12; font-weight: bold; margin-bottom: 5px; font-size: 0.9rem;">👨‍💻 Auteur</p>
+            <p style="color: #f0f0f0; margin: 0; font-size: 0.85rem;">Athony DJOUMBISSI</p>
+            <p style="color: #a0aec0; margin: 5px 0 0 0; font-size: 0.75rem;">📩 <a href="mailto:adjoumbissi@gmail.com" style="color: #a0aec0; text-decoration: none;">adjoumbissi@gmail.com</a></p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
     st.markdown(
         """
         <div style="text-align:center; color: #555; font-size: 0.75rem;">
-            IMMO BUILDER v1.0<br>
+            IMMO BUILDER v1.1<br>
             © 2026 — Tous droits réservés
         </div>
         """,
